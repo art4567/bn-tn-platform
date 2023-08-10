@@ -12,7 +12,7 @@
                                 <input type="text"  formControlName="username" placeholder="email" />
                                 <input type="password" formControlName="password" placeholder="password" />
                                 <button type="submit">login</button>
-                                <p class="message"><a (click)="gotoForgetPasswordPage()">ลืมรหัสผ่าน?</a></p>
+                                <!-- <p class="message"><a (click)="gotoForgetPasswordPage()">ลืมรหัสผ่าน?</a></p> -->
                             </form>
                             <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ errorMessage }}</div>
                     </mat-tab>
