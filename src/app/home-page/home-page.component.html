@@ -1,0 +1,32 @@
+<nav class="navbar-homepage ">
+  <div class="column-nav left">
+    <img class="logo-img " src="../../assets/botnoi-logo.png">
+  </div>
+  <div class="column-nav middle">
+    <div class="topnav">
+      <a [ngClass]="{'active': isActiveNavButton[0]}" (click)="activateButton(0)">Intent</a>
+      <a [ngClass]="{'active': isActiveNavButton[1]}" (click)="activateButton(1)">ความยินยอม</a>
+      <a [ngClass]="{'active': isActiveNavButton[2]}" (click)="activateButton(2)">คำหยาบ</a>
+      <a [ngClass]="{'active': isActiveNavButton[3]}" (click)="activateButton(3)">ประเมินความพึงพอใจ</a>
+      <!-- <a *ngIf="role=='admin'" [ngClass]="{'active': isActiveNavButton[4]}" (click)="activateButton(4)">ตั้งค่า</a> -->
+      <a  *ngIf="role==='admin'" [ngClass]="{'active': isActiveNavButton[4]}" (click)="activateButton(4)">ตั้งค่า</a>
+    </div>
+  </div>
+
+  <div class="column-nav right" >
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" style="background: white;border: none;">
+      <mat-icon>person</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="logout()">
+        <span >Logout</span>
+      </button>
+    </mat-menu>
+  </div>
+</nav>
+
+<!-- <app-intent-page *ngIf="isActiveNavButton[0]"></app-intent-page>
+<app-consent-page *ngIf="isActiveNavButton[1]"></app-consent-page>
+<app-profanity-page *ngIf="isActiveNavButton[2]"></app-profanity-page>
+<app-satisfaction-page *ngIf="isActiveNavButton[3]"></app-satisfaction-page>
+<app-setting-page *ngIf="isActiveNavButton[4]"></app-setting-page> -->
