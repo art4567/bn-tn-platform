@@ -16,7 +16,7 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300);
 
 body {
-/* background: linear-gradient(90deg, rgb(41, 87, 214) 0%, rgb(39, 6, 138) 50%); */
+background: linear-gradient(90deg, rgb(41, 87, 214) 0%, rgb(39, 6, 138) 50%);
 /* background: url('../../assets/bg.png')no-repeat; */
 background-size: cover;
 font-family: "Poppins";
