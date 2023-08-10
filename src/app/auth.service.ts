@@ -21,6 +21,7 @@ export class AuthService {
   //     // console.log('login', username, password);
   //     return true;
   // }
+
   authLoginUser = (username: string, password: string): any => {
     return this.http.post(this.masterurl + 'login', { "email": username,"password": password})
     .pipe(map(res => res));
